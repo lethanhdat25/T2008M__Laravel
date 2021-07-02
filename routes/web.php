@@ -15,12 +15,9 @@ use App\Http\Controllers\BrandController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
-Route::get('/home', [WebController::class,"home"]);
+Route::get('/', [\App\Http\Controllers\ApartmentController::class,"all"]);
 Route::get('/aboutus', [WebController::class,"AboutUs"]);
 Route::get('/table_product', [WebController::class,"table_product"]);
 Route::get('/categories', [CategoryController::class,"all"]);
