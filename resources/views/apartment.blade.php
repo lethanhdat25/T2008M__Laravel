@@ -11,6 +11,17 @@
     <title>Document</title>
 </head>
 <body >
+<nav class="container">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABUElEQVRYR+2XYVEDMRBGXx3gACSAA1DQQQGggDoAHICC4gAcgAOQAA5wQOdjGoaGS7LZ5WY65fb3bvLuu+RdO2PLarZlPOwk0CHwsE76FHiNpB5N6AB4AfbWEB/AEfDmhYoACeIJUEI/SwmdAILrLi9QCSYBuKG8QI/AvPH46tGZ6ioP0D1wZtxFvRfG3q+2XqBb4LJnA+AOWFhneoDOgaV14axPKSmtZlmBIjAJwgRlAdK1lmv+ouSoqjhbQIKRa5L4olBykxxVhKoB5RaOwqT5qs1LQC3xReGK4hwCGhumavMhIIuFowml+V82z4E84ovCbYgzB/qMru6c/+bIga6BK+ei3rEbQPuavmVjAG4A5E/REuMEtHMJ6TwMVe1ijHqGSgnX9DEB6RVOCbXE+n8S0q/GZ2B/4G7XbkvJ8O/Ace2/f0uM3g+me24CakW3AggZTCXcQ8QrAAAAAElFTkSuQmCC"/>
+    <h1>Sweet Home</h1>
+    <div style="display: flex;flex-direction: row;justify-content: space-between">
+        <a href="#">Home</a>
+        <a href="#">BestHome</a>
+        <a href="#">Life style</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+</nav>
 <div class="container">
     <div class="col-md-3" style="
     float: left;
