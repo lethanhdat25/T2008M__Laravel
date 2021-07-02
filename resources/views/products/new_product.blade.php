@@ -42,7 +42,7 @@
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body p-0">
-                                <form action="{{url("/products/save")}}" method="post" enctype="multipart/form-data">
+                                <form action="{{route("/save")}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
                                     <label>Name</label>
