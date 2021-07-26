@@ -16,7 +16,8 @@
     <div class="alert alert-success">
         {{ session()->get('success') }}
     </div>
-@else
+@endif
+@if(session()->has('error'))
     <div class="alert alert-success">
         {{ session()->get('error') }}
     </div>
