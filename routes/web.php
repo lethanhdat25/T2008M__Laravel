@@ -5,6 +5,7 @@ use App\Http\Controllers\WebController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\GetFeedbacksController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,8 +32,21 @@ Route::post("/products/save",[ProductController::class,"Save"]);
 Route::get("/products/edit/{id}",[ProductController::class,"Edit"]);
 Route::post("/products/update/{id}",[ProductController::class,"Update"]);
 Route::get("/products/delete/{id}",[ProductController::class,"Delete"]);
+Route::get("/products/add-to-cart/{id}",[ProductController::class,"AddToCart"]);
 Route::get("/brands",[BrandController::class,"all"]);
 Route::get("/brands/new",[BrandController::class,"new"]);
 Route::post("/brands/create",[BrandController::class,"createNew"]);
+//Route::get("/categories/add_to_cart/{id}",[ProductController::class,"AddToCart"]);
+Route::get('/cart',[ProductController::class,"cart"]);
+Route::get('/payMoney',[ProductController::class,"payMoney"]);
+Route::post('/thanhtoantien',[ProductController::class,"thanhtoantien"]);
+Route::get('checkout',function (){
+    return view("spa_view");
+});
+Route::get("/feedbacks",function (){
+    return view("getFeedbacks");
+});
+Route::post("submit-feedbacks",[GetFeedbacksController::class,"submit"]);
+
 
 
