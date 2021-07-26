@@ -15,8 +15,8 @@ class GetFeedbacksController extends Controller
             "telephone"=>$request->get("telephone"),
             "feedback"=>$request->get("feedback")
         ]);
-        if ($submit) alert()->success('Title','Lorem Lorem Lorem');
-        else alert()->error('Post Created', 'Something went wrong!');
+            session()->flash('success', 'Successfully.');
+            session()->flash('error', 'ERROR.');
         return redirect()->to("feedbacks");
     }
 }

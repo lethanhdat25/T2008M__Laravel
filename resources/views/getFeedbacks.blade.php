@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="{{asset("css/practical.css") }}">
 </head>
 <body>
+@if(session()->has('success'))
+    <div class="alert alert-success">
+        {{ session()->get('success') }}
+    </div>
+@else
+    <div class="alert alert-success">
+        {{ session()->get('error') }}
+    </div>
+@endif
+
 <form class="row g-3" id="feedbacks" action="{{url("/submit-feedbacks")}}" method="POST">
     @csrf
     <div class="col-md-9">
